@@ -61,7 +61,7 @@ export default function ProjectCard({ title, description, link, imageUrl }: Proj
       ctx.scale(dpr, dpr);
       ctx.textBaseline = 'top';
       ctx.font = font;
-      ctx.fillStyle = '#3e3831';
+      ctx.fillStyle = '#e0e2d5';
 
       // Draw text
       let y = 0;

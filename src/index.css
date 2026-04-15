@@ -1,12 +1,12 @@
 :root {
-  /* Pastel colors */
-  --bg-color: #e9dfc5;
-  --text-color: #3e3831;
-  --accent-color: #a89486;
-  --card-bg: #ece2d9;
-  --card-bg-glass: rgba(216, 200, 180, 0.5);
-  --border-color: #cbb4a6;
-  --border-color-glass: rgba(203, 180, 166, 0.4);
+  /* Warm/Dark Pastel Greens */
+  --bg-color: #2b2d26;
+  --text-color: #e0e2d5;
+  --accent-color: #8d9978;
+  --card-bg: #34382e;
+  --card-bg-glass: rgba(52, 56, 46, 0.55);
+  --border-color: #4a5040;
+  --border-color-glass: rgba(74, 80, 64, 0.4);
 
   --font-reading: 'Lora', 'Inter', serif;
   --font-special: 'Orbitron', sans-serif;
@@ -39,13 +39,13 @@ h6 {
 }
 
 a {
-  color: #725b48;
+  color: #9eb384;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: #4a3b2f;
+  color: #b9ce9e;
 }
 
 /* ==========================================
@@ -119,7 +119,7 @@ a:hover {
 }
 
 .nav a.active {
-  color: #4a3b2f;
+  color: var(--accent-color);
   font-weight: 700;
 }
 
@@ -180,7 +180,7 @@ a:hover {
 }
 
 .home-tagline {
-  color: #725b48;
+  color: #9eb384;
   font-size: 1.1rem;
   font-family: var(--font-special);
   margin-top: 0.2rem;
@@ -188,6 +188,14 @@ a:hover {
 
 .home-intro {
   margin-bottom: 2.5rem;
+}
+
+.home-intro p {
+  margin-bottom: 1.2rem;
+}
+
+.home-intro p:last-child {
+  margin-bottom: 0;
 }
 
 .home-links {
@@ -204,7 +212,7 @@ a:hover {
 }
 
 .home-resume-link {
-  color: #4a3b2f;
+  color: #b9ce9e;
 }
 
 .home-timeline-section {
@@ -237,16 +245,16 @@ a:hover {
   backdrop-filter: blur(2px) saturate(1.2);
   -webkit-backdrop-filter: blur(2px) saturate(1.2);
   box-shadow:
-    0 4px 24px rgba(180, 160, 140, 0.13),
-    inset 0 0.5px 0 rgba(255, 255, 255, 0.35);
+    0 4px 24px rgba(43, 45, 38, 0.4),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-item:hover {
   transform: translateY(-2px);
   box-shadow:
-    0 8px 32px rgba(180, 160, 140, 0.2),
-    inset 0 0.5px 0 rgba(255, 255, 255, 0.45);
+    0 8px 32px rgba(43, 45, 38, 0.5),
+    inset 0 0.5px 0 rgba(255, 255, 255, 0.15);
 }
 
 .project-item h3 {
@@ -290,7 +298,7 @@ a:hover {
 }
 
 .blog-date {
-  color: #888;
+  color: var(--accent-color);
   margin-top: 0.3rem;
   font-size: 0.9rem;
 }
@@ -310,7 +318,7 @@ a:hover {
 
 .footer {
   font-size: 0.8rem;
-  color: #777;
+  color: var(--accent-color);
   font-family: 'Inter', sans-serif;
   text-align: left;
 }
@@ -325,6 +333,49 @@ a:hover {
   border-radius: 8px;
   display: block;
   margin: 2rem auto;
+}
+
+.prose blockquote {
+  position: relative;
+  margin: 3.5rem 0;
+  padding: 2.5rem 3rem;
+  background: rgba(141, 153, 120, 0.08); /* Soft sage glass */
+  border-left: 4px solid var(--accent-color);
+  border-radius: 4px;
+  font-family: var(--font-reading);
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 1.7;
+  color: var(--text-color);
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.prose blockquote::before {
+  content: "“";
+  position: absolute;
+  top: -1.2rem;
+  left: 0.8rem;
+  font-size: 6rem;
+  color: var(--accent-color);
+  opacity: 0.25;
+  font-family: serif;
+}
+
+.prose blockquote cite {
+  display: block;
+  margin-top: 1.2rem;
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--accent-color);
+  text-align: right;
+}
+
+.prose p {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
 }
 
 .prose img[align="right"] {
@@ -374,7 +425,7 @@ a:hover {
 .timeline-date {
   text-align: right;
   font-size: 0.85rem;
-  color: #8b7969;
+  color: var(--accent-color);
   font-family: 'Inter', sans-serif;
   padding-top: 0.5rem;
 }
@@ -398,13 +449,14 @@ a:hover {
 .timeline-icon img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 4px;
 }
 
 .timeline-icon-placeholder {
   width: 100%;
   height: 100%;
-  background-color: #cbb4a6;
+  background-color: var(--border-color);
 }
 
 .timeline-content {
@@ -421,7 +473,7 @@ a:hover {
 
 .timeline-content a {
   font-weight: 600;
-  color: #4a3b2f;
+  color: #9eb384;
 }
 
 /* ==========================================

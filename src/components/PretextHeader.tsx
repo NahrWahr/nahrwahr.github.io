@@ -27,7 +27,7 @@ export default function PretextHeader({ text }: { text: string }) {
     
     ctx.scale(dpr, dpr);
     ctx.font = font;
-    ctx.fillStyle = '#3e3831';
+    ctx.fillStyle = '#e0e2d5';
     ctx.textBaseline = 'top';
 
     for (let i = 0; i < lines.length; i++) {

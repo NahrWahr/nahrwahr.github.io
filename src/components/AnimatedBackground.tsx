@@ -24,9 +24,9 @@ export default function AnimatedBackground() {
     const WARP_RADIUS = 220;     // how far the mouse influence reaches
     const WARP_STRENGTH = 35;    // max displacement in px
     const NODE_RADIUS = 2.2;
-    const LINE_COLOR = 'rgba(180, 158, 138, 0.14)';
-    const NODE_COLOR = 'rgba(139, 121, 105, 0.22)';
-    const NODE_HIGHLIGHT = 'rgba(114, 91, 72, 0.50)';
+    const LINE_COLOR = 'rgba(107, 142, 107, 0.15)';
+    const NODE_COLOR = 'rgba(107, 142, 107, 0.25)';
+    const NODE_HIGHLIGHT = 'rgba(144, 175, 144, 0.6)';
     const ARROW_SIZE = 5;
 
     interface MeshNode {

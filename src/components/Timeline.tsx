@@ -7,38 +7,53 @@ interface TimelineEvent {
 
 const events: TimelineEvent[] = [
   {
-    id: 'uci',
-    date: 'Sep 2025 - Present',
+    id: 'nvidia',
+    date: 'Jun 2026 - Sep 2026',
+    iconPath: `${import.meta.env.BASE_URL}images/Nvidia.webp`,
     content: (
       <>
-        Student Researcher at <strong>UC Irvine</strong>. Automating transistor-level analog block design via Graph Neural Networks for the FALCON project at HIE lab. Designed VCOs, LNAs, and mixers in Spectre.
+        Analog and Mixed Signal Design at <strong>Nvidia</strong> (Upcoming). Working on PCIe clocking solutions.
+      </>
+    )
+  },
+  {
+    id: 'uci',
+    date: 'Sep 2025 - Present',
+    iconPath: `${import.meta.env.BASE_URL}images/uc-irvine.svg`,
+    content: (
+      <>
+        Graduate Student Researcher at <strong>UC Irvine</strong>. Frequency Synthesis and Phase interpolation for mmWave RADAR bands.
       </>
     )
   },
   {
     id: 'neocambrian',
     date: '2024 - 2025',
+    iconPath: `${import.meta.env.BASE_URL}images/NeoCambrian.webp`,
     content: (
       <>
-        Engineer at <strong>NeoCambrian</strong>. <em>(Add specific role and project details here)</em>
+        Engineer at <strong>NeoCambrian</strong>. Designed Magneto-Hydro-Dynamic (MHD) Pumps for industrial furnaces used in aluminum recycling.
       </>
     )
   },
   {
     id: 'inspecity',
     date: '2023 - 2024',
+    iconPath: `${import.meta.env.BASE_URL}images/Inspecity.webp`,
     content: (
       <>
-        Engineer at <strong>Inspecity</strong>. <em>(Add specific role and project details here)</em>
+        Engineer at <strong>Inspecity</strong>. Developed high accuracy orbit propagators for LEO satellites.
+        Designed the GNC stack for satellite rendezvous and sensor fusion.
       </>
     )
   },
   {
     id: 'iitk',
     date: '2019 - 2023',
+    iconPath: `${import.meta.env.BASE_URL}images/iit-kanpur.svg`,
     content: (
       <>
-        B.S. Physics at <strong>IIT Kanpur</strong>. Focus on analog and mixed-signal design, control systems, and multi-sensor perception.
+        B.S. Physics at <strong>IIT Kanpur</strong>. Focus on dynamical systems and stability.
       </>
     )
   }

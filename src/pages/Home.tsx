@@ -7,11 +7,11 @@ export default function Home() {
       {/* Profile Image */}
       <div className="home-profile-wrapper">
         <img
-          src={`${import.meta.env.BASE_URL}images/profile.jpg`}
+          src={`${import.meta.env.BASE_URL}images/profile.webp`}
           alt="Rahul Narwar"
           className="home-profile-img"
           onError={(e) => {
-            e.currentTarget.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 280'><rect width='280' height='280' fill='%23e9dfc5'/><circle cx='140' cy='110' r='50' fill='%23cbb4a6'/><path d='M40 280 C40 180, 240 180, 240 280' fill='%23cbb4a6'/><text x='140' y='140' text-anchor='middle' font-family='sans-serif' font-size='14' fill='%23725b48' font-weight='bold'>Drop profile.jpg into</text><text x='140' y='160' text-anchor='middle' font-family='sans-serif' font-size='14' fill='%23725b48' font-weight='bold'>/public/images/</text></svg>";
+            e.currentTarget.src = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%2334382e'/><path d='M50 45a15 15 0 1 0 0-30 15 15 0 0 0 0 30zM20 85h60v-5c0-15-10-25-30-25s-30 10-30 25v5z' fill='%238d9978'/><text x='50' y='55' font-size='4' text-anchor='middle' fill='%23e0e2d5'>Drop profile.webp into</text><text x='50' y='62' font-size='4' text-anchor='middle' fill='%23e0e2d5'>/public/images/</text></svg>";
           }}
         />
       </div>
@@ -27,7 +27,22 @@ export default function Home() {
 
         <section className="home-intro">
           <p>
-            I design and model high-speed analog systems and circuits. This is a curated collection of my work spanning transistor-level design, layout characterization, and system simulation.
+            I work on high speed SerDes and wireline circuit design.
+            This site shows the trajectory I've taken, and fun things I got a chance to work on.
+          </p>
+          <p>
+            I did my bachelors at Indian Institute of Information Technology, Kanpur.
+            Worked for 2 years at startups in India on some very technical projects before coming to USA for my masters at University of California, Irvine.
+          </p>
+          <p>
+            I hold a very strong interest in Semiconductor Physics and Photonics, and I'm always on the lookout for opportunities to work on cutting edge research in these fields.
+          </p>
+          <p>
+            Some other things I can go on for hours about would be rockets, space exploration and science fiction.
+            Engineering and sci-fi go surprisingly hand in hand.
+          </p>
+          <p>
+            I'm currently based out of Irvine, CA.
           </p>
         </section>
 
